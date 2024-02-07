@@ -15,7 +15,7 @@
         if( item->IsEquiped())
             if(GetQuestFlag("QUICK_CHANGE_BLOOK") && get_global_time() < GetQuestFlag("QUICK_CHANGE_BLOOK"))
             {
-                ChatPacket(CHAT_TYPE_INFO, "You Need to wait for %d" , (GetQuestFlag("QUICK_CHANGE_BLOOK") - get_global_time) % 60);
+                ChatPacket(CHAT_TYPE_INFO, "You Need to wait for %d" , (GetQuestFlag("QUICK_CHANGE_BLOOK") - get_global_time()) % 60);
                 return false;
             }
             EquipItem(item);
