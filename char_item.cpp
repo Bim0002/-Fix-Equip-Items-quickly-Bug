@@ -19,7 +19,7 @@
                 return false;
             }
             EquipItem(item);
-            SetQuestFlag("QUICK_CHANGE_BLOOK", get_global_time + 5);
+            SetQuestFlag("QUICK_CHANGE_BLOOK", get_global_time() + 5);
         else
             UnequipItem(item);
         break;
